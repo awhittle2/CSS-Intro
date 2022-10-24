@@ -1,0 +1,239 @@
+/*
+ * You should write your CSS in this file.  Don't forget to add your name and
+ * @oregonstate.edu email address below.
+ *
+ * name: Abigail Whittle
+ * email: whittlea@oregonstate.edu
+ */
+
+/* Universal standards for font and margin*/
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	margin: 0;
+}
+
+/*  Header */
+header {
+	background: black;
+}
+
+/* Max height of image */
+.header-image-container img {
+	height: 125px;
+}
+
+/* Image and title on same line*/
+.header-image-container,
+.site-title {
+	display: inline-block;
+}
+
+/* Set font family, size and weight of title */
+.site-title {
+	/* Font details */
+	font-family: 'Roboto Slab', sans-serif;
+	font-size: 64px;
+	font-weight: 400;
+	line-height: 0;
+	/* Location */
+	position: relative;
+	top: -20px;
+	left: 20px;
+	/* Extra */
+	margin: 0;
+	text-decoration: none;
+}
+
+/* White title and no underline*/
+.site-title a {
+	color: #fdfdfd;
+	text-decoration: none;
+}
+
+/* Flex 1 */
+.content {
+	display: inline-flex;
+}
+
+.filter-container{
+	/* Details */
+	background-color: #efefef;
+	border-radius: 3px;
+	font-family: 'Roboto', sans-serif;
+	margin: 10px;
+	padding: 20px;
+	/* Size of container */
+	width: 200px;
+	height: 400px;
+}
+
+.filter-container h2 {
+	/* Title margin */
+	margin-bottom: 30px;
+}
+
+.filter-input-container {
+	display: flex;
+	/* Spacing between elements */
+	margin-bottom: 25px;
+}
+
+/* Make a flex*/
+.filter-input-label{
+	display: inline-flex;
+}
+
+/* Make a flex */
+.filter-input{
+	border: solid 2px #e9e9e9;
+	border-radius: 3px;
+	margin: 0 5px 0 5px;
+	/* Width for box */
+	display: inline-flex;
+	flex-basis: 200px;
+}
+
+/* Set width for min box */
+input#filter-min-price {
+	flex-grow: 0;
+	width: 69px;
+}
+
+/* Set width for max box */
+input#filter-max-price {
+	flex-grow: 0;
+	width: 68px;
+}
+
+/* Set width for city */
+select#filter-city {
+	width: 168px;
+}
+
+/* Make condition grow to fit container*/
+fieldset#filter-condition {
+	border-color: #e9e9e9;
+	flex-grow: 1;
+}
+
+/* Making sure the border color of the check boxes match*/
+input#filter-condition-new {
+	border-color: #e9e9e9;
+}
+
+/* Update button */
+#filter-update-button {
+	background-color: black;
+	border-radius: 4px;
+	border-width: 1px;
+	color: white;
+	cursor: pointer;
+	/* Size dimensions */
+	width: 100%;
+	height: 40px;
+	/* Font info */
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 100;
+}
+
+/* Button on hover*/
+#filter-update-button:hover{
+	background-color: #f3d0b5;
+	border-color: #6b4b32;
+	color: #6b4b32;
+}
+
+aside h2 {
+	line-height: 0;
+}
+
+/* Post flex */
+section#posts {
+	display: inline-flex;
+	flex: 4 900px;
+	flex-wrap: wrap;
+}
+
+/* Post flex details */
+.post {
+	/* Border the post div */
+	border: 2px solid #efefef;
+	flex: 0 325px;
+	/* Font info */
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	/* Extras */
+	height: 225px;
+	overflow: hidden;
+	padding: 10px;
+	margin: 10px;
+	/* Center image */
+	text-align: center;
+}
+
+/* Color the post title and no underline*/
+#posts .post .post-title {
+	color: #f67c17;
+	text-decoration: none;
+	text-align: center;
+	text-align: left;
+}
+
+/* Underline title when hovered */
+.post-title:hover {
+	text-decoration: underline;
+	text-decoration-color: #f67c17;
+	text-decoration-thickness: 1px;
+}
+
+.post-price {
+	background-color: #efefef;
+	border: solid 1px #bfbfbf;
+	border-radius: 3px;
+	margin: 0 5px 0 5px;
+	padding: 2px;
+	font-size: 13px;
+}
+
+/* Align post text to the left*/
+a .post-title {
+	text-align: left;
+}
+
+/* Add a margin between text and image*/
+.post-contents .post-info-container {
+	margin-top: 20px;
+}
+
+/* Make sure the image fits in the div*/
+.post-contents img {
+	max-height: 160px;
+	max-width: 280px;
+}
+
+/* Button */
+#sell-something-button {
+	background-color: #f8996b;
+	border: none;
+	border-radius: 50%;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+	/* Font info */
+	font-size: 30px;
+	font-style: bold;
+	line-height: 1;
+	/* Size constraints */
+	height: 50px;
+	width: 50px;
+	/* Where in the screen */
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+}
+
+#sell-something-button:hover {
+	transform: scale(10px);
+}
