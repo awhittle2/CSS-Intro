@@ -81,6 +81,7 @@ header {
 
 /* Make a flex*/
 .filter-input-label{
+	font-weight: 500;
 	display: inline-flex;
 }
 
@@ -170,15 +171,12 @@ section#posts {
 	padding: 10px;
 	margin: 10px;
 	/* Center image */
-	text-align: center;
 }
 
 /* Color the post title and no underline*/
 #posts .post .post-title {
 	color: #f67c17;
 	text-decoration: none;
-	text-align: center;
-	text-align: left;
 }
 
 /* Underline title when hovered */
@@ -207,6 +205,10 @@ a .post-title {
 	margin-top: 20px;
 }
 
+.post-image-container {
+	text-align: center;
+}
+
 /* Make sure the image fits in the div*/
 .post-contents img {
 	max-height: 160px;
@@ -215,7 +217,7 @@ a .post-title {
 
 /* Button */
 #sell-something-button {
-	background-color: #f8996b;
+	background-color: #f67c17;
 	border: none;
 	border-radius: 50%;
 	color: white;
@@ -232,8 +234,9 @@ a .post-title {
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
+	box-shadow: 2px 2px 3px 2px lightgrey;
 }
 
 #sell-something-button:hover {
-	transform: scale(10px);
+	transform: scale(1.10);
 }
